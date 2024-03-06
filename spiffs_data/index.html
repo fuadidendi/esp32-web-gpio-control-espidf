@@ -55,7 +55,7 @@
 </style>
 
 <head>
-    <title>ESP32 WEB SERVER</title>
+    <title>ESP32 WEB GPIO CONTROL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -63,15 +63,31 @@
 </head>
 
 <body>
-    <h2>ESP32 WEB SERVER</h2>
+    <h2>ESP32 WEB GPIO CONTROL</h2>
     <div class="content">
         <div class="card-grid">
             <div class="card">
-                <p><i class="fas fa-lightbulb fa-2x" style="color:#c81919;"></i> <strong>GPIO2</strong></p>
+                <p><i class="fas fa-lightbulb fa-2x" style="color:#c81919;"></i> <strong>GPIO RED</strong></p>
                 <p>GPIO state: <strong> %s </strong></p>
                 <p>
-                    <a href="/led2on"><button class="button">ON</button></a>
-                    <a href="/led2off"><button class="button button2">OFF</button></a>
+                    <a href="/ledRedOn"><button class="button">ON</button></a>
+                    <a href="/ledRedOff"><button class="button button2">OFF</button></a>
+                </p>
+            </div>
+            <div class="card">
+                <p><i class="fas fa-lightbulb fa-2x" style="color:#eeff00;"></i> <strong>GPIO YELLOW</strong></p>
+                <p>GPIO state: <strong> %s </strong></p>
+                <p>
+                    <a href="/ledYellowOn"><button class="button">ON</button></a>
+                    <a href="/ledYellowOff"><button class="button button2">OFF</button></a>
+                </p>
+            </div>
+            <div class="card">
+                <p><i class="fas fa-lightbulb fa-2x" style="color:#3cff00;"></i> <strong>GPIO GREEN</strong></p>
+                <p>GPIO state: <strong> %s </strong></p>
+                <p>
+                    <a href="/ledGreenOn"><button class="button">ON</button></a>
+                    <a href="/ledGreenOff"><button class="button button2">OFF</button></a>
                 </p>
             </div>
         </div>
