@@ -29,3 +29,17 @@ Below is short explanation of remaining files in the project folder.
 │   └── index.html
 └── README.md                  This is the file you are currently reading
 ```
+
+## How it works
+
+When any user try to access this web server through an IP address, ESP32 SPIFFS web server respond to this HTTP request with a simple HTML and CSS files that represents LED control buttons, LED status, title ‘ESP32 WEB GPUO CONTROL’ and a lamp symbol. During program startup, HTML/CSS file content reads from SPI flash and save in a buffer.
+
+There are three LED Control with two buttons on the GUI that is “ON” button and “OFF” button. User will be able to control ESP32 GPIO through these buttons. 
+
+<img src="esp32-web-gpio-control.png">
+
+#### Figure 1. Web GPIO Control Preview
+
+<img src="esp32-flow-diagram.png">
+
+#### Figure 2. Web GPIO Control Flow Diagram. [image source](https://esp32tutorials.com/esp32-esp-idf-spiffs-web-server/)
